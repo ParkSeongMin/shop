@@ -3,6 +3,8 @@ package com.tm.shop.service;
 import java.util.Iterator;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
@@ -19,6 +21,8 @@ import com.tm.shop.repository.ValueRepository;
 @Service
 public class ValueCalculateServiceImpl implements ValueCalculateService {
 
+	private Logger log = LoggerFactory.getLogger(this.getClass().getSimpleName());
+	
 	@Autowired
 	private ShopRepository shopRepository;
 	@Autowired
@@ -59,7 +63,8 @@ public class ValueCalculateServiceImpl implements ValueCalculateService {
 			// update score
 			shopRepository.save(shop);
 		}
-		
+	
+		log.info("shop value calculated.");
 	}
 
 }

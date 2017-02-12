@@ -32,6 +32,8 @@ public class RepositoryInitializer {
 	public static final String DEFAULT_SHOP = "ilovenail";
 	public static final int DEFAULT_COUNT = 10;
 	
+	private static long initializedCnt = 0;
+	
 	private static boolean initialized = false;
 	
 	@Autowired
@@ -50,9 +52,10 @@ public class RepositoryInitializer {
 		
 		initializerShop();
 		initializeValue();
-		applyValue();
+//		applyValue();
 		
 		
+		initializedCnt++;
 		initialized = true;
 	
 	}

@@ -21,13 +21,11 @@ public class ShopEventHandler {
 
 	@HandleBeforeSave
 	public void handleShopSave(Shop shop) {
-		System.err.println("ddd");
 		shop.setLastModified(new Date());
 	}
 
 	@HandleBeforeCreate
 	public void handleShopCreate(Shop shop) {
-		System.err.println("aaa");
 		shop.setLastModified(new Date());
 	}
 

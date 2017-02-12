@@ -51,7 +51,6 @@ public class RepositoryInitializerTest {
 	
 	@Test
 	public void testResetRepository() {
-		initialize();
 		reset();
 	}
 	

@@ -14,10 +14,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.tm.shop.config.RepositoryInitializer;
 import com.tm.shop.config.RepositoryInitializerAccessor;
 import com.tm.shop.entity.Photo;
-import com.tm.shop.entity.Shop;
-import com.tm.shop.entity.ShopBuilder;
 import com.tm.shop.entity.Photo.SourceType;
+import com.tm.shop.entity.Shop;
 import com.tm.shop.entity.Shop.ShopType;
+import com.tm.shop.entity.ShopBuilder;
 import com.tm.shop.repository.ShopRepository;
 import com.tm.shop.repository.ValueRepository;
 
@@ -36,12 +36,12 @@ public class TestFramework {
 	
 	@Before
 	public void setUp() throws Exception {
+		RepositoryInitializerAccessor.clear(initializer);
 		initializer.initialize();
 	}
 	
 	@After
 	public void tearDown() throws Exception {
-		RepositoryInitializerAccessor.clear(initializer);
 	}
 	
 	@BeforeClass

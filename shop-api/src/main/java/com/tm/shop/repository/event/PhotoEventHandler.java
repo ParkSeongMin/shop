@@ -13,13 +13,11 @@ public class PhotoEventHandler {
 	
 	@HandleBeforeSave
 	public void handlePhotoSave(Photo photo) {
-		System.err.println("ddd");
 		photo.getShop().setLastModified(new Date());
 	}
 
 	@HandleBeforeCreate
 	public void handleShopCreate(Photo photo) {
-		System.err.println("aaa");
 		photo.getShop().setLastModified(new Date());
 	}
 

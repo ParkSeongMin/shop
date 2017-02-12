@@ -3,7 +3,9 @@ package com.tm.shop.repository;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 import java.util.Date;
 import java.util.List;
@@ -15,10 +17,10 @@ import org.junit.Test;
 import com.tm.shop.TestFramework;
 import com.tm.shop.config.RepositoryInitializer;
 import com.tm.shop.entity.Photo;
-import com.tm.shop.entity.Shop;
-import com.tm.shop.entity.ShopBuilder;
 import com.tm.shop.entity.Photo.SourceType;
+import com.tm.shop.entity.Shop;
 import com.tm.shop.entity.Shop.ShopType;
+import com.tm.shop.entity.ShopBuilder;
 
 public class ShopRepositoryTest extends TestFramework {
 
