@@ -73,7 +73,7 @@ public class ShopBuilder {
 		return this;
 	}
 	
-	public Shop bulid() {
+	public Shop build() {
 		return this.shop;
 	}
 	

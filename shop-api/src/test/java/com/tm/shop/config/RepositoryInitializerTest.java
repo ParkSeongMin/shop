@@ -1,14 +1,11 @@
 package com.tm.shop.config;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -17,10 +14,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.expression.Expression;
-import org.springframework.expression.ExpressionParser;
-import org.springframework.expression.spel.standard.SpelExpressionParser;
-import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.tm.shop.entity.Shop;
@@ -28,10 +21,6 @@ import com.tm.shop.entity.Value;
 import com.tm.shop.entity.ValueDetail;
 import com.tm.shop.repository.ShopRepository;
 import com.tm.shop.repository.ValueRepository;
-
-import ognl.Node;
-import ognl.Ognl;
-import ognl.OgnlContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

@@ -88,7 +88,7 @@ public class RepositoryInitializer {
 										.lastModified(new Date())
 										.photo(new Photo("http://gelato.im/photo/" + name +"/" + index, SourceType.itSelf))
 										.photo(new Photo("http://gelato.im/photo/" + name +"/" + index+1, SourceType.providedShop))
-										.bulid();
+										.build();
 		
 		return shop;
 	}

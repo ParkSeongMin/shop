@@ -60,7 +60,7 @@ public class Shop {
 	private double rating;
 
 	/* 사진 (null 허용) */
-	@OneToMany(mappedBy="shop", cascade = CascadeType.ALL, fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="shop", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
 	private List<Photo> photoList;
 
 	/* 상점타입 */
